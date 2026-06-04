@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieVaultBridge</title>
+    <meta
+      name="description"
+      content="MovieVaultBridge is a local movie library merge tool for matching, reviewing, planning, and safely copying titles into a curated vault."
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/movie-vault-bridge-logo.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <img src="./assets/movie-vault-bridge-logo.svg" alt="MovieVaultBridge logo" class="logo-mark" />
+            <span>MovieVaultBridge</span>
+          </div>
+          <h1>Bridge a messy movie source into a curated vault with review-first safety.</h1>
+          <p>
+            MovieVaultBridge scans one library, compares it against another, flags uncertain matches,
+            generates a dry-run plan, and only performs guarded copy operations when you explicitly allow it.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/PaulAtkins88/MovieVaultBridge">View on GitHub</a>
+            <a class="button secondary" href="https://github.com/PaulAtkins88/MovieVaultBridge#readme">Read the docs</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-header">Why it exists</div>
+          <ul>
+            <li>Recovered folders rarely match your target naming cleanly.</li>
+            <li>Blind file copies are too risky for curated media libraries.</li>
+            <li>Human review should guide ambiguous matches and upgrades.</li>
+            <li>Real writes should be gated, observable, and reversible where possible.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="grid two-up">
+        <article class="card">
+          <h2>What it does</h2>
+          <ul>
+            <li>Scans source and target movie libraries</li>
+            <li>Caches the target inventory in SQLite</li>
+            <li>Uses metadata, title normalization, and year evidence</li>
+            <li>Separates copy-ready, review, and upgrade candidates</li>
+            <li>Persists review decisions for future runs</li>
+            <li>Tracks live copy progress and keeps the latest run report</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Safety model</h2>
+          <ul>
+            <li>Dry-run first</li>
+            <li>Sandbox copy before real target copy</li>
+            <li>Explicit environment gates for copy execution</li>
+            <li>Typed confirmation phrase for real target writes</li>
+            <li>No overwrites for new-copy items</li>
+            <li>Explicit upgrade replacements only when approved</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card workflow">
+        <h2>Operator workflow</h2>
+        <div class="steps" id="workflow-steps"></div>
+      </section>
+
+      <section class="grid two-up">
+        <article class="card">
+          <h2>Tech stack</h2>
+          <p>Fastify, React, Vite, Tailwind CSS, TypeScript, and SQLite via Node built-ins.</p>
+          <pre><code>npm install
+npm run dev
+npm run build</code></pre>
+        </article>
+        <article class="card">
+          <h2>Repository</h2>
+          <p>This repository is source-available for non-commercial use and includes contribution guidance, issue templates, CI, and a lightweight Pages site.</p>
+          <div class="hero-actions left">
+            <a class="button secondary" href="https://github.com/PaulAtkins88/MovieVaultBridge/issues/new/choose">Open an issue</a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

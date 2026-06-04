@@ -1,0 +1,21 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mvbGlow" x1="40" y1="28" x2="208" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="208" height="208" rx="44" fill="#120F0D"/>
+  <rect x="24" y="24" width="208" height="208" rx="44" stroke="rgba(255,255,255,0.12)"/>
+  <path d="M61 84C61 67.4315 74.4315 54 91 54H165C181.569 54 195 67.4315 195 84V172C195 188.569 181.569 202 165 202H91C74.4315 202 61 188.569 61 172V84Z" stroke="url(#mvbGlow)" stroke-width="14"/>
+  <path d="M88 88H168" stroke="url(#mvbGlow)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M88 168H168" stroke="url(#mvbGlow)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M79 102L112 128L79 154" stroke="#F8FAFC" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M177 102L144 128L177 154" stroke="#F8FAFC" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="100" cy="73" r="6" fill="#FBBF24"/>
+  <circle cx="128" cy="73" r="6" fill="#FBBF24"/>
+  <circle cx="156" cy="73" r="6" fill="#FBBF24"/>
+  <circle cx="100" cy="183" r="6" fill="#34D399"/>
+  <circle cx="128" cy="183" r="6" fill="#34D399"/>
+  <circle cx="156" cy="183" r="6" fill="#34D399"/>
+</svg>
